@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "typeinfo": "c",
+        "stdio.h": "c"
+    },
+    "terminal.integrated.profiles.windows": {
+        "CMD (UTF-8)": {
+            "path": "C:\\Windows\\System32\\cmd.exe",
+            "args": ["/K", "chcp 65001"]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "CMD (UTF-8)"
+}
