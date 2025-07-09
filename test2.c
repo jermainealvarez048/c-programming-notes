@@ -2,9 +2,14 @@
 
 int main(void)
 {
-    int a[5] = {0, 1, 2, 3, 4};
+    int i = 1;
+    int j = 1;
 
-    printf("%d\n", a[6]);
+    for (i = 2; j > 0; j--) {
+        printf("Inside: %d\n", i);
+    }
+
+    printf("Outside: %d\n", i);
 
     return 0;
 }
