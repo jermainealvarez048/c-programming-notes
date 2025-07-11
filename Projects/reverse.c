@@ -21,7 +21,7 @@ int main(void)
 {
     int a[N], i;
 
-    printf("Enter 10 numbers: ");
+    printf("Enter 10 number: ");
     for (i = 0; i < N; i++) {
         scanf("%d", &a[i]);
     }

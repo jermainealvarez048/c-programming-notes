@@ -4,10 +4,10 @@
         "stdio.h": "c"
     },
     "terminal.integrated.profiles.windows": {
-        "CMD (UTF-8)": {
-            "path": "C:\\Windows\\System32\\cmd.exe",
-            "args": ["/K", "chcp 65001"]
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
         }
     },
-    "terminal.integrated.defaultProfile.windows": "CMD (UTF-8)"
+    "terminal.integrated.defaultProfile.windows": "PowerShell"
 }
