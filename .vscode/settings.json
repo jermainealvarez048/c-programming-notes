@@ -1,7 +1,16 @@
 {
     "files.associations": {
         "typeinfo": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "cctype": "c",
+        "cfloat": "c",
+        "climits": "c",
+        "cmath": "c",
+        "compare": "c",
+        "cstdio": "c",
+        "cstdlib": "c",
+        "type_traits": "c",
+        "time.h": "c"
     },
     "terminal.integrated.profiles.windows": {
         "PowerShell": {

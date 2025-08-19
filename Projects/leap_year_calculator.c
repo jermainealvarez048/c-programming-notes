@@ -53,6 +53,8 @@ int main(void)
 	} else {
 		printf("No\n");
 	}
+
 	printf("Days in month: %d\n", days_in_month);
+	
 	return 0;
 }
