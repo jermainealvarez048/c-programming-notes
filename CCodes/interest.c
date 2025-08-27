@@ -30,6 +30,7 @@ inner loop will increment the interest rate from its lowest value to its highest
 /* Prints a table of compund interest*/
 
 #include <stdio.h>
+
 #define NUM_RATES ((int) (sizeof(value) / sizeof(value[0])))
 #define INITIAL_BALANCE 100.00
 
