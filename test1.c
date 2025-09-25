@@ -1,49 +1,28 @@
-/* First name input */
+/* Find the smallest and largest element in an Array */
 
-#include <ctype.h>
-#include <stdbool.h>
 #include <stdio.h>
 
+#define N 5
+
 int main(void) {
-    bool is_capital_letter = false;
-    char capital_letters[26] = 
-        {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
-         'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
-    char first_name[20];;
-    char ch;
-    int len = 0;
+    int A[N];
+    int small, large, i;
 
-    printf("Enter first name: ");
-    while (1) {
-        if (len > 20) {
-            printf("First name must be 8 - 20 characters long.\n");
-            return 1;
-        }
-        
-        scanf("%c", &first_name[len]);
-        if (first_name[len] == '\n' && len < 8) {
-            printf("First name must be 8 - 20 characters long.\n");
-            return 1;
-        } 
-        if (first_name[len] == '\n' || first_name[len] == ' ')
-            break;
-        
-        len++;
+    printf("Enter 5 numbers: ");
+    for (i = 0; i < N; i++) 
+        scanf("%d", &A[i]);
+    
+    small = A[0];
+    large = A[0];
+    for (i = 1; i < N; i++) {
+        if (A[i] < small)
+            small = A[i];
+        if (A[i] > large)
+            large = A[i];
     }
 
-    for (int i = 0; i <= 26; i++) {
-        if (first_name[0] == capital_letters[i])
-            is_capital_letter = true;
-    }
-    if (!is_capital_letter) {
-        printf("Invalid! First letter must be in capital.\n");
-        return 1;
-    }
-
-    printf("hello, ");
-    for (int i = 0; i < len; i++) 
-        printf("%c", first_name[i]);
-    printf("\n");
+    printf("small = %d\n", small);
+    printf("large = %d\n", large);
 
     return 0;
 }

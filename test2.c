@@ -1,30 +1,21 @@
-/* Sorting numbers */
+/* Insertion of an element at specified position in an Array */
 
 #include <stdio.h>
 
+#define N 5
+
 int main(void) {
-    int num[10];
-    int temp;
+    int A[N];
+    int position, element, i;
 
-    printf("Enter 10 numbers         : ");
-    for (int i = 0; i < 10; i++) 
-        scanf("%d", &num[i]);
+    printf("Enter 5 numbers: ");
+    for (i = 0; i < N; i++)
+        scanf("%d", &A[i]);
     
-    for (int i = 0; i < 10; i++) {
-        for (int j = 0; j < 10; j++) {
-            if (num[i] < num[j]) {
-                temp = num[j];
-                num[j] = num[i];
-                num[i] = temp;
-            }
-        }
-    }
-
-    printf("lowest to greatest number:");
-    for (int i = 0; i < 10; i++) {
-        printf(" %d", num[i]);
-    }
-    printf("\n");
+    printf("Enter position: ");
+    scanf("%d", &position);
+    printf("Enter element: ");
+    scanf("%d", &position);
 
     return 0;
 }

@@ -10,7 +10,8 @@
         "cstdio": "c",
         "cstdlib": "c",
         "type_traits": "c",
-        "time.h": "c"
+        "time.h": "c",
+        "ctype.h": "c"
     },
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
