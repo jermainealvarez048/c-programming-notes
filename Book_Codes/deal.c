@@ -58,9 +58,12 @@ int main(void) {
    const char rank_code[] = {'2', '3', '4', '5', '6', '7', '8', '9', 't', 'j', 'q', 'k', 'a'};
    const char suit_code[] = {'c', 'd', 'h', 's'};
 
+   srand((unsigned) time(NULL));
+
    printf("Enter number of cards in hand: ");
    scanf("%d", &num_cards);
 
+   printf("Your hand:");
    while (num_cards > 0) {
       rank = rand() % NUM_RANKS;
       suit = rand() % NUM_SUITS;
@@ -68,7 +71,7 @@ int main(void) {
       if (!in_hand[suit][rank]) {
          in_hand[suit][rank] = true;
          num_cards--;
-         printf("%c%c ", rank_code[rank], suit_code[suit]);
+         printf(" %c%c", rank_code[rank], suit_code[suit]);
       }
    }
    printf("\n");

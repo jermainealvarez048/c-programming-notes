@@ -1,4 +1,5 @@
-/* The following table shows the daily flights from one city to another:
+/* 
+The following table shows the daily flights from one city to another:
     Departure time  Arrival time
     8:00 a.m.       10:16 a.m.
     9:43 a.m.       11:52 a.m.
