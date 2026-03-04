@@ -17,8 +17,12 @@
         "PowerShell": {
             "source": "PowerShell",
             "icon": "terminal-powershell"
+        },
+        "Windows PowerShell": {
+            "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "icon": "terminal-powershell"
         }
     },
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
     "C_Cpp.errorSquiggles": "enabled"
 }
