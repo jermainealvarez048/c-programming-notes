@@ -2,6 +2,6 @@
 
 trying to master c
 
-````javascript
-console.log('hello world');
+````c
+printf("Hello World\n");
 ````
