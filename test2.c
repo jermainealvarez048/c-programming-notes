@@ -1,26 +1,26 @@
 #include <stdio.h>
 
-#define MSG_LEN 50
+#define BEGIN {
+#define END }
+#define LOOP for (;;)
 
-void read_line(char s[], int len);
+int main(void) 
+BEGIN
+    #ifdef DEBUG
+        printf("Debug Mode\n");
+    #endif
 
-int main(void) {
-    char message[MSG_LEN+1];
+    printf("Hello World\n");
 
-    printf("Enter message: ");
-    read_line(message, MSG_LEN);
-
-    printf("\nYour message: %s\n", message);
+    int i = 0;
+    LOOP 
+    BEGIN
+        printf("%d ", i);
+        if (i == 10)
+            break;
+        i++;
+    END
+    printf("\n");
 
     return 0;
-}
-
-void read_line(char s[], int len) {
-    int ch, i = 0;
-
-    while ((ch = getchar()) != '\n')
-        if (i <= len)
-            s[i++] = ch;
-    
-    s[i] = '\0';
-}
+END
